@@ -19,10 +19,11 @@ const About = () => {
       <main className="flex gap-16 items-center lg:items-start flex-col lg:flex-row">
         <div className="space-y-4 lg:w-3/5">
           <p>
-            Hi, my name is Vatsal Singh, an artist as well as crazy full stack
-            web developer who wants to explore every tech stack.
+            Hi, my name is Yasser El jarida, a 2nd year engineering student in
+            ENSET Mohammedia who is studying Big Data and Cloud Computing as well as other
+            software engineering technologies.
           </p>
-          <p>
+          {/* <p>
             Fast-forward to today, and I’ve had the privilege of working at a
             start-up -{' '}
             <Link
@@ -33,9 +34,9 @@ const About = () => {
               Webnetics
             </Link>
             .
-          </p>
+          </p> */}
           <p>
-            My main focus these days is learning mobile development and finding
+            My main focus these days is learning data engineering and web 3 (Blockchain/NFTs) technologies as well as finding
             a decent remote job.
           </p>
 

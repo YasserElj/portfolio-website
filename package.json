@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 4044",
     "build": "next build",
     "start": "next start",
     "check": "prettier --check .",
@@ -13,7 +13,8 @@
     "next": "latest",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "sharp": "^0.31.3"
+    "sharp": "^0.31.3",
+    "yarn": "^1.22.19"
   },
   "devDependencies": {
     "@iconify/react": "^4.0.1",

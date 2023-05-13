@@ -21,33 +21,33 @@ import { getId } from './helper';
 
 export const socialLinks: StringKeyValueType = {
   facebook: 'https://www.facebook.com/vatsalsinghkv',
-  instagram: 'https://www.instagram.com/vatsalsinghkv',
-  twitter: 'https://twitter.com/vatsalsinghkv',
-  github: 'https://github.com/vatsalsinghkv',
-  linkedin: 'https://www.linkedin.com/in/vatsalsinghkv/',
+  instagram: 'https://www.instagram.com/elj.yasser',
+  twitter: 'https://twitter.com/eljaridayasser',
+  github: 'https://github.com/yasserelj',
+  linkedin: 'https://www.linkedin.com/in/yasser-el-jarida-700151196/',
 };
 
 export const author = {
-  name: 'Vatsal Singh',
-  email: 'vatsalsinghkv@gmail.com',
+  name: 'Yasser El jarida',
+  email: 'yassereljarida@gmail.com',
 };
 
 export const seoData = {
-  title: 'Vatsal Singh | Full-Stack Developer',
+  title: 'Yasser El jarida | Big Data and Cloud Computing Engineer',
   description:
-    'Vatsal Singh is a full-stack developer who specializes in building (and occasionally designing) exceptional visual interfaces.',
+    'Yasser El Jarida is a 2nd year engineering student in ENSET Mohammedia who is studying Big Data and Cloud Computing as well as other software engineering technologies.',
   author: author.name,
   image:
     'https://user-images.githubusercontent.com/68834718/217467445-0b0d2d63-f8ad-4702-8474-814eb2cbb3be.png',
   url: 'https://vatsalsinghkv.vercel.app/',
   keywords: [
-    'Vatsal',
-    'Vatsal Singh',
-    '@vatsalsinghkv',
-    'vatsalsinghkv',
+    'Yasser',
+    'Yasser El jarida',
+    '@eljaridayasser',
+    'yassereljarida',
     'Portfolio',
-    'Vatsal Portfolio ',
-    'Vatsal Singh Portfolio',
+    'Yasser Portfolio ',
+    'Yasser El jarida Portfolio',
   ],
 };
 
@@ -77,13 +77,12 @@ export const navbarSection: NavbarSectionType = {
 
 export const heroSection: HeroSectionType = {
   subtitle: 'Hi, my name is',
-  title: 'vatsal singh.',
-  tagline: 'I create visually pleasing interfaces for the web.',
-  description:
-    "I'm a passionate Full Stack web developer having an experience of web applications with React.js & Next.js with TypeScript & TailwindCSS and UI/UX designing.",
+  title: author.name,
+  tagline: 'Big Data and Cloud Computing Engineer.',
+  description: 'I am a 2nd year engineering student in ENSET Mohammedia who is studying Big Data and Cloud Computing as well as other software engineering technologies.',
   // description:
   //   "I'm a passionate Full Stack web developer having an experience of web  applications with React.js, Next.js and Blockchain development on Ethereum, Solidity and Web3.js.",
-  specialText: 'Currently available for remote job & freelance',
+  specialText: 'Currently looking for an internship',
   // either button or simple text (information)
   cta: {
     title: 'see my resume',
@@ -101,15 +100,15 @@ export const aboutSection: AboutSectionType = {
   list: {
     title: 'Here are a few technologies I’ve been working with recently:',
     items: [
-      'NextJs',
-      'TailwindCSS',
-      'ExpressJs',
+      'Apache Spark',
+      'Apache Hadoop',
       'Solidity',
-      'TypeScript',
       'Web3Js',
+      'Truffle',
+      'Ganache'
     ],
   },
-  img: '/vatsal-singh.jpg',
+  img: '/yasser-elj.jpg',
 };
 
 // * Skills Section
@@ -119,57 +118,58 @@ export const skillsSection: SkillsSectionType = {
   skills: [
     {
       id: getId(),
-      title: 'full stack development',
+      title: 'Data processing and software developement',
       // animation lottie file: https://lottiefiles.com/
       lottie: {
-        light: '/lotties/frontend.json',
-        dark: '/lotties/frontend-dark.json',
+        light: '/lotties/about.json',
+        dark: '/lotties/about.json',
       },
       points: [
-        'Building responsive static websites using Next.js',
+        'Processing huge data set using pySpark',
         'Building responsive Single Page Apps in React.js',
-        'Building RESTful APIs in Express',
+        'Building backend using spring Framework',
       ],
       softwareSkills: [
         // iconify icons: https://icon-sets.iconify.design/
         { name: 'html-5', icon: 'vscode-icons:file-type-html' },
         { name: 'CSS-3', icon: 'vscode-icons:file-type-css' },
-        { name: 'sass', icon: 'vscode-icons:file-type-sass' },
+        // { name: 'sass', icon: 'vscode-icons:file-type-sass' },
         { name: 'javaScript', icon: 'vscode-icons:file-type-js-official' },
-        {
-          name: 'typeScript',
-          icon: 'vscode-icons:file-type-typescript-official',
-        },
+        // {
+        //   name: 'typeScript',
+        //   icon: 'vscode-icons:file-type-typescript-official',
+        // },
         { name: 'python', icon: 'vscode-icons:file-type-python' },
         { name: 'nodejs', icon: 'logos:nodejs-icon' },
-        { name: 'reactjs', icon: 'logos:react' },
-        { name: 'nextjs', icon: 'logos:nextjs-icon' },
+        // { name: 'reactjs', icon: 'logos:react' },
+        // { name: 'nextjs', icon: 'logos:nextjs-icon' },
         // { name: 'angularjs', icon: 'logos:angular-icon' },
         { name: 'tailwindcss', icon: 'logos:tailwindcss-icon' },
-        { name: 'redux', icon: 'logos:redux' },
-        { name: 'database', icon: 'vscode-icons:file-type-sql' },
-        { name: 'jest', icon: 'vscode-icons:file-type-jest' },
+        // { name: 'redux', icon: 'logos:redux' },
+        { name: 'mysql', icon: 'logos:mysql' },
+        { name: 'mongodb', icon: 'logos:mongodb' },
+        // { name: 'jest', icon: 'vscode-icons:file-type-jest' },
       ],
     },
+    // {
+    //   id: getId(),
+    //   title: 'Web 3 and Blockchain',
+    //   lottie: {
+    //     light: '/lotties/blockchain.json',
+    //     dark: '/lotties/blockchain.json',
+    //   },
+    //   points: [
+    //     'Experience in designing user-friendly interfaces with figma',
+    //     'Experience in developing design systems and style guides',
+    //     'Providing user-friendly design solutions',
+    //   ],
+    //   softwareSkills: [
+    //     { name: 'figma', icon: 'logos:figma' },
+    //     { name: 'adobe illustrator', icon: 'logos:adobe-illustrator' },
+    //     { name: 'adobe photoshop', icon: 'logos:adobe-photoshop' },
+    //   ],
+    // },
     {
-      id: getId(),
-      title: 'UI/UX designing',
-      lottie: {
-        light: '/lotties/designing.json',
-        dark: '/lotties/designing-dark.json',
-      },
-      points: [
-        'Experience in designing user-friendly interfaces with figma',
-        'Experience in developing design systems and style guides',
-        'Providing user-friendly design solutions',
-      ],
-      softwareSkills: [
-        { name: 'figma', icon: 'logos:figma' },
-        { name: 'adobe illustrator', icon: 'logos:adobe-illustrator' },
-        { name: 'adobe photoshop', icon: 'logos:adobe-photoshop' },
-      ],
-    },
-    /* {
       id: getId(),
       title: 'blockchain development',
       lottie: {
@@ -183,11 +183,13 @@ export const skillsSection: SkillsSectionType = {
       ],
       softwareSkills: [
         { name: 'ethereum', icon: 'logos:ethereum' },
+        { name: 'truffle', icon: 'logos:truffle' },
+        { name: 'ganache', icon: 'logos:ganache' },
         { name: 'solidity', icon: 'logos:solidity' },
         { name: 'web3js', icon: 'logos:web3js' },
         { name: 'metamask', icon: 'logos:metamask-icon' },
       ],
-    }, */
+    }
   ],
 };
 
@@ -376,10 +378,10 @@ export const socialSection: SocialSectionType = {
       icon: 'tabler:brand-github',
       url: socialLinks.github,
     },
-    {
-      icon: 'mdi:instagram',
-      url: socialLinks.instagram,
-    },
+    // {
+    //   icon: 'mdi:instagram',
+    //   url: socialLinks.instagram,
+    // },
     {
       icon: 'lucide:twitter',
       url: socialLinks.twitter,
@@ -388,10 +390,10 @@ export const socialSection: SocialSectionType = {
       icon: 'lucide:linkedin',
       url: socialLinks.linkedin,
     },
-    {
-      icon: 'lucide:facebook',
-      url: socialLinks.facebook,
-    },
+    // {
+    //   icon: 'lucide:facebook',
+    //   url: socialLinks.facebook,
+    // },
   ],
 };
 
