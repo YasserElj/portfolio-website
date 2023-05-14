@@ -13,7 +13,7 @@
   <img src="https://img.shields.io/badge/Version-1.3.1-blue"/ >
 </p>
 
-[![My Portfolio](https://user-images.githubusercontent.com/68834718/214532356-7c56cdbd-0136-4d24-a532-d27e160ae72d.png)](https://vatsalsinghkv.vercel.app/)
+[![My Portfolio](public\front-page.png)
 
 ## Sections
 
@@ -71,30 +71,3 @@
 
 - To change the theme, edit `src/styles/globals.css`
 
-## Continuous Development
-
-- [x] Add animation with framer-motion
-- [ ] Add Content Management System (CMS)
-- [ ] Add test cases
-- [ ] Separate route (archive) for all the projects with filters
-- [ ] Switch to Next 13
-
-## Contact
-
-- Website - [vatsalsinghkv.vercel.app](https://vatsalsinghkv.vercel.app)
-- Github - [@vatsalsinghkv](https://github.com/vatsalsinghkv)
-- LinkedIn - [@vatsalsinghkv](https://www.linkedin.com/in/vatsalsinghkv/)
-- Twitter - [@vatsalsinghkv](https://www.twitter.com/vatsalsinghkv)
-- Instagram - [@vatsalsinghkv](https://www.instagram.com/vatsalsinghkv)
-- Facebook - [@vatsalsinghkv](https://www.facebook.com/vatsal.singh.kv)
-- devChallenges - [@vatsalsinghkv](https://devchallenges.io/portfolio/vatsalsinghkv)
-- Frontend Mentor - [@vatsalsinghkv](https://www.frontendmentor.io/profile/vatsalsinghkv)
-
-## Acknowledgements
-
-- [https://developer-portfolio-1hanzla100.vercel.app/](https://developer-portfolio-1hanzla100.vercel.app/) - Design Inspiration
-- [https://brittanychiang.com/](https://brittanychiang.com/) - Design Inspiration
-
-## Show Your Support
-
-Give a ⭐️ if you liked this project!
