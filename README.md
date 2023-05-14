@@ -13,7 +13,7 @@
   <img src="https://img.shields.io/badge/Version-1.3.1-blue"/ >
 </p>
 
-[![My Portfolio](public\front-page.png)
+[![My Portfolio](https://github.com/YasserElj/portfolio-website/blob/main/public/front-page.png)
 
 ## Sections
 
