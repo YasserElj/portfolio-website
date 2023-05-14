@@ -27,14 +27,14 @@ const hideNavWhileScrolling = ({
 
   let prevScrollPos = window.pageYOffset;
 
-  // window.onscroll = () => {
-  //   if (when) {
-  //     let curScrollPos = window.pageYOffset;
-  //     if (prevScrollPos < curScrollPos) nav.style.top = `-${offset}px`;
-  //     else nav.style.top = '0';
-  //     prevScrollPos = curScrollPos;
-  //   }
-  // };
+  window.onscroll = () => {
+    if (when) {
+      let curScrollPos = window.pageYOffset;
+      if (prevScrollPos < curScrollPos) nav.style.top = `-${offset}px`;
+      else nav.style.top = '0';
+      prevScrollPos = curScrollPos;
+    }
+  };
 };
 
 type NavItemsProps = {

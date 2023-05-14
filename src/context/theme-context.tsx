@@ -2,8 +2,8 @@ import { createContext, useCallback, useEffect, useState } from 'react';
 
 const initialState = {
   isDark: false,
-  toggleTheme: () => {},
-  setIsDarkMode: (theme: boolean) => {},
+  toggleTheme: () => { },
+  setIsDarkMode: (theme: boolean) => { },
 };
 
 const ThemeContext = createContext(initialState);
@@ -31,7 +31,7 @@ const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
     window
       .matchMedia('(prefers-color-scheme: dark)')
       .addEventListener('change', (e) => {
-        setIsDarkMode(e.matches);
+        setIsDarkMode(true);
       });
   }, [setIsDarkMode]);
 
