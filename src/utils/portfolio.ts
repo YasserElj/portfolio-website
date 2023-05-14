@@ -78,7 +78,7 @@ export const navbarSection: NavbarSectionType = {
 export const heroSection: HeroSectionType = {
   subtitle: 'Hi, my name is',
   title: author.name,
-  tagline: 'Big Data and Cloud Computing Engineer.',
+  tagline: 'Big Data and Cloud Computing Engineering Student.',
   // description: 'I am a 2nd year engineering student in ENSET Mohammedia who is studying Big Data and Cloud Computing as well as other software engineering technologies.',
   // description:
   //   "I'm a passionate Full Stack web developer having an experience of web  applications with React.js, Next.js and Blockchain development on Ethereum, Solidity and Web3.js.",
