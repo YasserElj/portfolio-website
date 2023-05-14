@@ -63,7 +63,7 @@ export const navbarSection: NavbarSectionType = {
   navLinks: [
     { name: 'about', url: '/#about' },
     { name: 'skills', url: '/#skills' },
-    { name: 'journey', url: '/#experience' },
+    { name: 'education', url: '/#experience' },
     { name: 'projects', url: '/#projects' },
     { name: 'contact', url: '/#contact' },
   ],
@@ -196,7 +196,7 @@ export const skillsSection: SkillsSectionType = {
 // * Experience Section
 
 export const experienceSection: ExperienceSectionType = {
-  title: "Academic journey",
+  title: "Education",
   experiences: [
     {
       company: 'ENSET Mohammedia',
