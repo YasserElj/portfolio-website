@@ -63,7 +63,7 @@ export const navbarSection: NavbarSectionType = {
   navLinks: [
     { name: 'about', url: '/#about' },
     { name: 'skills', url: '/#skills' },
-    { name: 'experience', url: '/#experience' },
+    { name: 'journey', url: '/#experience' },
     { name: 'projects', url: '/#projects' },
     { name: 'contact', url: '/#contact' },
   ],
@@ -79,7 +79,7 @@ export const heroSection: HeroSectionType = {
   subtitle: 'Hi, my name is',
   title: author.name,
   tagline: 'Big Data and Cloud Computing Engineer.',
-  description: 'I am a 2nd year engineering student in ENSET Mohammedia who is studying Big Data and Cloud Computing as well as other software engineering technologies.',
+  // description: 'I am a 2nd year engineering student in ENSET Mohammedia who is studying Big Data and Cloud Computing as well as other software engineering technologies.',
   // description:
   //   "I'm a passionate Full Stack web developer having an experience of web  applications with React.js, Next.js and Blockchain development on Ethereum, Solidity and Web3.js.",
   specialText: 'Currently looking for an internship',
@@ -87,7 +87,7 @@ export const heroSection: HeroSectionType = {
   cta: {
     title: 'see my resume',
     url: `/${resumeFileName}`,
-    hideInDesktop: true,
+    hideInDesktop: false,
   },
 };
 
@@ -118,74 +118,74 @@ export const skillsSection: SkillsSectionType = {
   skills: [
     {
       id: getId(),
-      title: 'Data processing and software developement',
+      title: 'Data processing',
       // animation lottie file: https://lottiefiles.com/
       lottie: {
-        light: '/lotties/about.json',
-        dark: '/lotties/about.json',
+        light: '/lotties/data.json',
+        dark: '/lotties/data.json',
       },
       points: [
-        'Processing huge data set using pySpark',
-        'Building responsive Single Page Apps in React.js',
-        'Building backend using spring Framework',
+        'Built data processing pipelines using Hadoop and Spark to analyze and transform large datasets in Python/Java.',
+        'Leveraged Java-based Hadoop MapReduce framework to manipulate and aggregate big data in a distributed environment.',
+        'Built real-time data processing systems using Spark Streaming to handle streaming data from various sources and perform real-time analytics.',
+        'Used Spark SQL to build complex SQL queries on top of distributed datasets, enabling faster data exploration and analysis.',
       ],
       softwareSkills: [
         // iconify icons: https://icon-sets.iconify.design/
-        { name: 'html-5', icon: 'vscode-icons:file-type-html' },
-        { name: 'CSS-3', icon: 'vscode-icons:file-type-css' },
-        // { name: 'sass', icon: 'vscode-icons:file-type-sass' },
-        { name: 'javaScript', icon: 'vscode-icons:file-type-js-official' },
-        // {
-        //   name: 'typeScript',
-        //   icon: 'vscode-icons:file-type-typescript-official',
-        // },
+
         { name: 'python', icon: 'vscode-icons:file-type-python' },
-        { name: 'nodejs', icon: 'logos:nodejs-icon' },
-        // { name: 'reactjs', icon: 'logos:react' },
-        // { name: 'nextjs', icon: 'logos:nextjs-icon' },
-        // { name: 'angularjs', icon: 'logos:angular-icon' },
-        { name: 'tailwindcss', icon: 'logos:tailwindcss-icon' },
-        // { name: 'redux', icon: 'logos:redux' },
+        { name: 'hadoop', icon: 'logos:hadoop' },
+        { name: 'spark', icon: 'devicon:apachespark' },
+        { name: 'java', icon: 'logos:java' },
         { name: 'mysql', icon: 'logos:mysql' },
-        { name: 'mongodb', icon: 'logos:mongodb' },
-        // { name: 'jest', icon: 'vscode-icons:file-type-jest' },
       ],
     },
-    // {
-    //   id: getId(),
-    //   title: 'Web 3 and Blockchain',
-    //   lottie: {
-    //     light: '/lotties/blockchain.json',
-    //     dark: '/lotties/blockchain.json',
-    //   },
-    //   points: [
-    //     'Experience in designing user-friendly interfaces with figma',
-    //     'Experience in developing design systems and style guides',
-    //     'Providing user-friendly design solutions',
-    //   ],
-    //   softwareSkills: [
-    //     { name: 'figma', icon: 'logos:figma' },
-    //     { name: 'adobe illustrator', icon: 'logos:adobe-illustrator' },
-    //     { name: 'adobe photoshop', icon: 'logos:adobe-photoshop' },
-    //   ],
-    // },
+    {
+      id: getId(),
+      title: 'Software developement',
+      // animation lottie file: https://lottiefiles.com/
+      lottie: {
+        light: '/lotties/frontend.json',
+        dark: '/lotties/frontend-dark.json',
+      },
+      points: [
+        'Developed responsive websites using HTML, CSS, and Bootstrap, ensuring optimal user experience across devices.',
+        'Built server-side applications using Node.js and Express, leveraging the power of JavaScript to create fast and scalable web applications.',
+        'Developed enterprise web applications using Java, Spring JEE, and Angular, leveraging the power of these technologies to create scalable and maintainable applications.',
+      ],
+      softwareSkills: [
+        // iconify icons: https://icon-sets.iconify.design/
+
+        { name: 'java', icon: 'logos:java' },
+        { name: 'angularjs', icon: 'logos:angular-icon' },
+        { name: 'html-5', icon: 'vscode-icons:file-type-html' },
+        { name: 'CSS-3', icon: 'vscode-icons:file-type-css' },
+        { name: 'javaScript', icon: 'vscode-icons:file-type-js-official' },
+        { name: 'nodejs', icon: 'logos:nodejs-icon' },
+        { name: 'mysql', icon: 'logos:mysql' },
+        { name: 'mongodb', icon: 'logos:mongodb-icon' },
+        // { name: 'tailwindcss', icon: 'logos:tailwindcss-icon' },
+      ],
+    },
     {
       id: getId(),
       title: 'blockchain development',
       lottie: {
-        light: '/lotties/ethereum.json',
+        light: '/lotties/ethereum-dark.json',
         dark: '/lotties/ethereum-dark.json',
       },
       points: [
-        'Experience in developing Smart Contract using Solidity & Ethereum',
-        'Developing NFT Smart Contracts using ERC-721 Token Standard',
-        'Building Dapps with React.js & Solidity using Web3.js',
+        'Developed and deployed Ethereum smart contracts using Solidity, enabling the creation of decentralized applications (dApps) on the Ethereum blockchain.',
+        'Utilized Ganache for local Ethereum blockchain development and testing.',
+        'Worked with IPFS (InterPlanetary File System) to store and distribute content on the decentralized web.',
+        'Developing NFT Smart Contracts using ERC-721 Token Standard.',
       ],
       softwareSkills: [
         { name: 'ethereum', icon: 'logos:ethereum' },
-        { name: 'truffle', icon: 'logos:truffle' },
-        { name: 'ganache', icon: 'logos:ganache' },
         { name: 'solidity', icon: 'logos:solidity' },
+        { name: 'IPFS', icon: 'skill-icons:ipfs-dark' },
+        { name: 'truffle', icon: 'logos:truffle-icon' },
+        { name: 'ganache', icon: 'logos:ganache-icon' },
         { name: 'web3js', icon: 'logos:web3js' },
         { name: 'metamask', icon: 'logos:metamask-icon' },
       ],
@@ -196,30 +196,36 @@ export const skillsSection: SkillsSectionType = {
 // * Experience Section
 
 export const experienceSection: ExperienceSectionType = {
-  title: "where i've worked",
+  title: "Academic journey",
   experiences: [
     {
-      company: 'webnetics',
-      companyUrl: 'https://webnetic.vercel.app/',
-      role: 'frontend developer',
-      started: 'june 2022',
-      upto: 'january 2023',
+      company: 'ENSET Mohammedia',
+      companyUrl: '',
+      role: 'ENSET Mohammedia',
+      started: '2021',
+      upto: 'now',
       tasks: [
-        'Built static frontend UI from the ground up using Next.js and Figma handover designs.',
-        'Architected the folder structure and initial setup of the app.',
-        'Reviewed and approved multiple Pull requests.',
-        'Worked remotely with a distributed team from around the globe, collaborating closely using screen-sharing.',
+        '1st and 2nd year of computer engineering: Big Data and cloud Computing'
       ],
     },
     {
-      company: 'Kronos',
-      companyUrl: 'https://kronos-sscbs-21.github.io/proj-kronos-site/',
-      role: 'designer & developer',
-      started: 'january 2021',
-      upto: 'june 2021',
+      company: 'CPGE',
+      companyUrl: '',
+      role: 'PREPARATORY CLASSES',
+      started: '2019',
+      upto: '2021',
       tasks: [
-        'Designed social media posts.',
-        'Worked remotely with designing & tech team.',
+        'Preparatory classes Ibn Abdoun High School - Khouribga'
+      ],
+    },
+    {
+      company: 'BACCALAUREATE',
+      companyUrl: '',
+      role: 'BACCALAUREATE IN MATHEMATICAL SCIENCES',
+      started: '2019',
+      upto: '',
+      tasks: [
+        'Abou El Kacem Ezzayani High School - Khénifra'
       ],
     },
   ],
@@ -230,130 +236,43 @@ export const experienceSection: ExperienceSectionType = {
 export const projectsSection: ProjectsSectionType = {
   title: 'my projects',
   projects: [
+
     {
       id: getId(),
-      name: 'fylo landing page',
-      url: 'https://fylo-kv.netlify.app/',
-      repo: 'https://github.com/vatsalsinghkv/fylo',
-      img: 'https://user-images.githubusercontent.com/68834718/212843973-ef864a5a-f393-4901-b422-6f775a043cdb.png',
-      year: 2023,
-      tags: ['Html', 'Tailwind', 'TS'],
+      name: 'Discord weather bot',
+      url: 'https://github.com/YasserElj/WeatherDiscordBot',
+      repo: 'https://github.com/YasserElj/WeatherDiscordBot',
+      img: '/Projects_Images/DiscordBot.png',
+      year: 2021,
+      tags: ['Python', 'discord.py', 'Beautiful Soup'],
+    },
+
+    {
+      id: getId(),
+      name: 'Hackathon Blockchain and AI in service of health',
+      url: 'Hackathon.pdf',
+      repo: 'Hackathon.pdf',
+      img: '/Projects_Images/hackathon.jpg',
+      year: 2021,
+      tags: ['Python', 'discord.py', 'Beautiful Soup'],
     },
     {
       id: getId(),
-      name: 'remotive jobs',
-      url: 'https://remotive-jobs.vercel.app/',
-      repo: 'https://github.com/vatsalsinghkv/remotive-jobs',
-      img: 'https://user-images.githubusercontent.com/68834718/189035104-aa71647e-33e4-442a-a2f9-c0d50bba2db1.png',
+      name: 'Arcade Space Race',
+      url: 'https://github.com/YasserElj/Arcade_Space_Race_Challenge',
+      repo: 'https://github.com/YasserElj/Arcade_Space_Race_Challenge',
+      img: '/Projects_Images/Arcade_pygame.png',
       year: 2022,
-      tags: ['Nextjs', 'Sass'],
+      tags: ['Python', 'Pygame'],
     },
     {
       id: getId(),
-      name: 'countries app',
-      url: 'https://countries-app-kv.netlify.app/',
-      repo: 'https://github.com/vatsalsinghkv/rest-countries-api',
-      img: 'https://user-images.githubusercontent.com/68834718/169527851-19fefb2e-e440-411a-a8a1-4767e2c8688a.png',
+      name: 'Space Game Javafx',
+      url: 'https://github.com/YasserElj/SpaceGameJavaFX',
+      repo: 'https://github.com/YasserElj/SpaceGameJavaFX',
+      img: '/Projects_Images/javafxSpaceGame.jpg',
       year: 2022,
-      tags: ['React', 'Sass'],
-    },
-    {
-      id: getId(),
-      name: 'rock paper scissors',
-      url: 'https://rock-paper-scissors-kv.netlify.app/',
-      repo: 'https://github.com/vatsalsinghkv/rock-paper-scissors',
-      img: 'https://user-images.githubusercontent.com/68834718/162578706-b9e57735-6fbc-4c7b-8243-2a6ba447404e.jpg',
-      year: 2022,
-      tags: ['React', 'Sass'],
-    },
-    {
-      id: getId(),
-      name: 'todo app',
-      url: 'https://todo-kv.netlify.app/',
-      repo: 'https://github.com/vatsalsinghkv/todo-app',
-      img: 'https://user-images.githubusercontent.com/68834718/152794002-0e7bc583-084b-4c39-83bb-d82d5dd642b2.png',
-      year: 2022,
-      tags: ['React', 'Sass', 'JS'],
-    },
-    {
-      id: getId(),
-      name: 'weather app',
-      url: 'https://weather-kv.netlify.app/',
-      repo: 'https://github.com/vatsalsinghkv/weather-app',
-      img: 'https://user-images.githubusercontent.com/68834718/148419702-491fa08d-e520-4e2f-b219-374ec7118b2b.png',
-      year: 2022,
-      tags: ['Html', 'sass', 'JS', 'jQuery'],
-    },
-    {
-      id: getId(),
-      name: 'blogr landing page',
-      url: 'https://blogr-kv.netlify.app/',
-      repo: 'https://github.com/vatsalsinghkv/blogr-landing-page',
-      img: 'https://user-images.githubusercontent.com/68834718/210222542-6455303d-c93e-430b-a5c8-96a431044184.png',
-      year: 2021,
-      tags: ['html', 'sass', 'JS'],
-    },
-    {
-      id: getId(),
-      name: 'natours',
-      url: 'https://natours-kv.netlify.app/',
-      repo: 'https://github.com/vatsalsinghkv/natours',
-      img: 'https://user-images.githubusercontent.com/68834718/210223114-b4f64b44-2501-49c9-9fb7-b8e53fe654c6.png',
-      year: 2021,
-      tags: ['html', 'sass', 'JS'],
-    },
-    // {
-    //   name: 'nexter',
-    //   url: 'https://vatsalsinghkv.github.io/nexter/',
-    //   repo: 'https://github.com/vatsalsinghkv/nexter',
-    //   img: 'https://user-images.githubusercontent.com/68834718/210224671-5501c5d9-a8d2-4044-a14c-38fb7e46a113.png',
-    //   year: 2021,
-    //   tags: ['html', 'sass'],
-    // },
-    {
-      id: getId(),
-      name: 'IP address tracker',
-      url: 'https://vatsalsinghkv.github.io/ip-address-tracker/',
-      repo: 'https://github.com/vatsalsinghkv/ip-address-tracker',
-      img: 'https://user-images.githubusercontent.com/68834718/210223386-03bcaa20-e649-4b3d-8709-59e42c6d685a.png',
-      year: 2021,
-      tags: ['html', 'bootstrap', 'JS'],
-    },
-    {
-      id: getId(),
-      name: 'calculator app',
-      url: 'https://vatsalsinghkv.github.io/calculator-app/',
-      repo: 'https://github.com/vatsalsinghkv/calculator-app/',
-      img: 'https://user-images.githubusercontent.com/68834718/210223825-3b68d696-39c6-490c-9433-f315b7efccbd.png',
-      year: 2021,
-      tags: ['html', 'CSS', 'JS'],
-    },
-    {
-      id: getId(),
-      name: 'pig game',
-      url: 'https://vatsalsinghkv.github.io/pig-game/',
-      repo: 'https://github.com/vatsalsinghkv/pig-game',
-      img: 'https://user-images.githubusercontent.com/68834718/210223527-de7fde7a-244e-4db5-8e33-d561afad6084.png',
-      year: 2021,
-      tags: ['html', 'CSS', 'JS'],
-    },
-    {
-      id: getId(),
-      name: 'bankist marketing',
-      url: 'https://vatsalsinghkv.github.io/bankist-marketing/',
-      repo: 'https://github.com/vatsalsinghkv/bankist-marketing',
-      img: 'https://user-images.githubusercontent.com/68834718/210225545-989f79c3-cf05-4c53-b48e-b21f373b3734.png',
-      year: 2021,
-      tags: ['html', 'CSS', 'JS'],
-    },
-    {
-      id: getId(),
-      name: 'digital clock',
-      url: 'https://vatsalsinghkv.github.io/digital-clock/',
-      repo: 'https://github.com/vatsalsinghkv/digital-clock',
-      img: 'https://user-images.githubusercontent.com/68834718/210226274-a453ba15-9b83-4577-a84d-e4b88e0a5605.png',
-      year: 2021,
-      tags: ['html', 'CSS', 'JS'],
+      tags: ['Java', 'Javafx'],
     },
   ],
 };
@@ -364,7 +283,7 @@ export const contactSection: ContactSectionType = {
   title: 'get in touch',
   subtitle: "what's next",
   paragraphs: [
-    'I’m currently looking for a remote job or any new opportunities.',
+    'I’m currently looking for an innternship',
     'Whether you have a project to discuss or just want to say hi, my inbox is open for all!',
   ],
   link: `mailto:${author.email}`,
@@ -400,6 +319,6 @@ export const socialSection: SocialSectionType = {
 // Footer Section
 
 export const footerSection: FooterSectionType = {
-  title: 'Design & Built by Vatsal Singh',
-  link: 'https://github.com/vatsalsinghkv/portfolio-website',
+  title: 'By Yasser El jarida',
+  link: 'https://github.com/YasserElj/portfolio-website',
 };

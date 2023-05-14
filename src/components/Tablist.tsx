@@ -21,22 +21,21 @@ const Tablist = ({ experiences }: Props) => {
   const sliderStyle =
     windowWidth <= sm
       ? {
-          left: `calc(${activeExperience}*120px)`,
-        }
+        left: `calc(${activeExperience}*120px)`,
+      }
       : {
-          top: `calc(${activeExperience}*2.5rem)`,
-        };
+        top: `calc(${activeExperience}*2.5rem)`,
+      };
 
   return (
     <div className="flex flex-col sm:flex-row text-sm md:text-base gap-6 md:gap-10 min-h-[250px]">
       {/* Sidebar */}
-      <div className="font-mono text-xs sm:text-sm relative flex justify-start sm:flex-col overflow-scroll sm:overflow-auto sm:min-w-[150px]">
+      <div className="font-mono text-xs sm:text-sm relative flex justify-start sm:flex-col overflow-scroll sm:overflow-auto sm:min-w-[200px]">
         {experiences.map(({ company }, i) => (
           <button
             key={getId()}
-            className={`h-10 min-w-[120px] sm:w-auto sm:px-5 sm:!text-left capitalize hover:bg-accent-light hover:text-accent focus:outline-none focus:bg-accent-light focus:text-accent ${
-              i === activeExperience ? 'text-accent' : ''
-            }`}
+            className={`h-10 min-w-[120px] sm:w-auto sm:px-5 sm:!text-left capitalize hover:bg-accent-light hover:text-accent focus:outline-none focus:bg-accent-light focus:text-accent ${i === activeExperience ? 'text-accent' : ''
+              }`}
             onClick={() => setActiveExperience(i)}
           >
             {company}
@@ -54,13 +53,13 @@ const Tablist = ({ experiences }: Props) => {
         <div className="space-y-1">
           <h3 className="text-lg font-medium text-dark-2 capitalize">
             {role}{' '}
-            <Link href={companyUrl} target="_blank" className="text-accent">
-              @{company}
-            </Link>
+            {/* <Link href={companyUrl} target="_blank" className="text-accent">
+              {company}
+            </Link> */}
           </h3>
           <p className="text-xs font-mono capitalize">
             <>
-              {started} - {upto}
+              {started}  {upto}
             </>
           </p>
         </div>

@@ -36,8 +36,7 @@ const About = () => {
             .
           </p> */}
           <p>
-            My main focus these days is learning data engineering and web 3 (Blockchain/NFTs) technologies as well as finding
-            a decent remote job.
+            My main focus these days is learning data processing, web 3 / Blockchain technologies :
           </p>
 
           {list && (
