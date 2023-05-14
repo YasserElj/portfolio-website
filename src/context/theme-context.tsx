@@ -21,17 +21,17 @@ const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
 
   // SETTING THEMES ACCORDING TO DEVICE
   useEffect(() => {
-    if (
-      window.matchMedia &&
-      window.matchMedia('(prefers-color-scheme: dark)').matches
-    ) {
-      setIsDarkMode(true);
-    }
+    // if (
+    //   window.matchMedia &&
+    //   window.matchMedia('(prefers-color-scheme: dark)').matches
+    // ) {
+    setIsDarkMode(true);
+    // }  
 
     window
       .matchMedia('(prefers-color-scheme: dark)')
       .addEventListener('change', (e) => {
-        setIsDarkMode(true);
+        setIsDarkMode(e.matches);
       });
   }, [setIsDarkMode]);
 
